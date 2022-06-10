@@ -1,8 +1,8 @@
 # Decoupling Predictions in Distributed Learning for Multi-Center Left Atrial MRI Segmentation
 This project is developed for our MICCAI 2022 paper: [Decoupling Predictions in Distributed Learning
-for Multi-Center Left Atrial MRI Segmentation](https://arxiv.org/submit/4349231). Our code is implemented based on the [PuzzleMix](https://github.com/snu-mllab/PuzzleMix), but we used them to tackle the non-IID challenge in distributed leearning. For more information, please read the following paper:
+for Multi-Center Left Atrial MRI Segmentation](https://arxiv.org/submit/4349231). Our code is implemented based on the [[Learn_Noisy_Labels_Medical_Images](https://github.com/snu-mllab/PuzzleMix)](https://github.com/moucheng2017/Learn_Noisy_Labels_Medical_Images) and [[probabilistic_unet](https://github.com/snu-mllab/PuzzleMix)](https://github.com/SimonKohl/probabilistic_unet), but we used them to tackle the non-IID challenge in distributed leearning. For more information, please read the following paper:
 
-<div align=center><img src="Framework.png" width="70%"></div>
+<div align=center><img src="framework.png" width="90%"></div>
 
 ```
 @article{Gao2022decouple,
@@ -34,7 +34,7 @@ XXX_dataset/
 4. Check your GPU devices and modify the "GPU_ids" parameter in main.py, line 83 and "CUDA_VISIBLE_DEVICES" in run.sh.
 5. Start to train by sh run.sh.
 ```
-CUDA_LAUNCH_BLOCKING=1 CUDA_VISIBLE_DEVICES=5 nohup python main.py --mixup_alpha 0.5 --graph True --n_labels 3 --eta 0.2 --beta 1.2 --gamma 0.5 --neigh_size 4 --transport True --t_size 4 --t_eps 0.8 &
+python main.py --mode feddan --lq 0.7 --weight 0.01 --size 256
 ```
 
 # Requirements
