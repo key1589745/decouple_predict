@@ -1,6 +1,6 @@
 # Decoupling Predictions in Distributed Learning for Multi-Center Left Atrial MRI Segmentation
 This project is developed for our MICCAI 2022 paper: [Decoupling Predictions in Distributed Learning
-for Multi-Center Left Atrial MRI Segmentation](https://arxiv.org/submit/4349231). Our code is implemented based on the [[Learn_Noisy_Labels_Medical_Images](https://github.com/snu-mllab/PuzzleMix)](https://github.com/moucheng2017/Learn_Noisy_Labels_Medical_Images) and [[probabilistic_unet](https://github.com/snu-mllab/PuzzleMix)](https://github.com/SimonKohl/probabilistic_unet), but we used them to tackle the non-IID challenge in distributed leearning. For more information, please read the following paper:
+for Multi-Center Left Atrial MRI Segmentation](https://arxiv.org/submit/4349231). Our code is implemented based on the [Learn_Noisy_Labels_Medical_Images](https://github.com/moucheng2017/Learn_Noisy_Labels_Medical_Images) and [probabilistic_unet](https://github.com/SimonKohl/probabilistic_unet), but we used them to tackle the non-IID challenge in distributed leearning. For more information, please read the following paper:
 
 <div align=center><img src="framework.png" width="90%"></div>
 
