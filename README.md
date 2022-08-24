@@ -13,20 +13,6 @@ for Multi-Center Left Atrial MRI Segmentation](https://arxiv.org/abs/2206.05284v
 }
 ```
 
-# Datasets
-```
-XXX_dataset/
-  -- TestSet/
-      --images/
-      --labels/
-  -- train/
-      --images/
-      --labels/
-  -- val/
-      --images/
-      --labels/
-```
-
 # Usage
 ```
 python main.py --mode feddan --lq 0.7 --weight 0.01 --size 256
